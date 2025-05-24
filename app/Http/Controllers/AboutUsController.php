@@ -16,7 +16,7 @@ class AboutUsController extends Controller
 
         foreach ($users as $user) {
             if ($name == $user['name']) {
-                return view('about-us-detail', ['user'=>$user]);
+                return view('aboutUsDetail', ['user'=>$user]);
             }
         }
     }

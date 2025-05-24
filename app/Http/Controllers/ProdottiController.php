@@ -16,7 +16,7 @@ class ProdottiController extends Controller
 
         foreach ($prodotti as $prodotto) {
             if ($id == $prodotto['id']) {
-                return view('prodotti-detail', ['prodotto'=>$prodotto]);
+                return view('prodottiDetail', ['prodotto'=>$prodotto]);
             }
         }
     }
